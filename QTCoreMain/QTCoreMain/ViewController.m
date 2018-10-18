@@ -16,6 +16,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [UIView new]
+    .set_frame(CGRectMake(0, 0, Width, Height))
+    .set_backgroundColor(RGB(100, 200, 255))
+    .set_superView(self.view);
     // Do any additional setup after loading the view, typically from a nib.
 }
 

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		938312FAF36FC963107A82BE /* libPods-QTCoreMain.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 667A45C03CE73EA206192C22 /* libPods-QTCoreMain.a */; };
 		95B5CD1F217876DF00091FA5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 95B5CD1E217876DF00091FA5 /* AppDelegate.m */; };
 		95B5CD22217876DF00091FA5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 95B5CD21217876DF00091FA5 /* ViewController.m */; };
 		95B5CD25217876DF00091FA5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95B5CD23217876DF00091FA5 /* Main.storyboard */; };
@@ -15,6 +16,27 @@
 		95B5CD2D217876E100091FA5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 95B5CD2C217876E100091FA5 /* main.m */; };
 		95B5CD37217876E100091FA5 /* QTCoreMainTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 95B5CD36217876E100091FA5 /* QTCoreMainTests.m */; };
 		95B5CD42217876E100091FA5 /* QTCoreMainUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 95B5CD41217876E100091FA5 /* QTCoreMainUITests.m */; };
+		95B5CDCA2178789800091FA5 /* UIView+Setup.m in Sources */ = {isa = PBXBuildFile; fileRef = 95B5CD992178789800091FA5 /* UIView+Setup.m */; };
+		95B5CDCB2178789800091FA5 /* UIImageView+Setup.m in Sources */ = {isa = PBXBuildFile; fileRef = 95B5CD9A2178789800091FA5 /* UIImageView+Setup.m */; };
+		95B5CDCC2178789800091FA5 /* UIScrollView+Setup.m in Sources */ = {isa = PBXBuildFile; fileRef = 95B5CD9B2178789800091FA5 /* UIScrollView+Setup.m */; };
+		95B5CDCD2178789800091FA5 /* UILabel+Setup.m in Sources */ = {isa = PBXBuildFile; fileRef = 95B5CD9C2178789800091FA5 /* UILabel+Setup.m */; };
+		95B5CDCE2178789800091FA5 /* UITextField+Setup.m in Sources */ = {isa = PBXBuildFile; fileRef = 95B5CD9E2178789800091FA5 /* UITextField+Setup.m */; };
+		95B5CDCF2178789800091FA5 /* UIButton+Setup.m in Sources */ = {isa = PBXBuildFile; fileRef = 95B5CDA42178789800091FA5 /* UIButton+Setup.m */; };
+		95B5CDD02178789800091FA5 /* UserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 95B5CDA62178789800091FA5 /* UserModel.m */; };
+		95B5CDD12178789800091FA5 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 95B5CDAD2178789800091FA5 /* BaseViewController.m */; };
+		95B5CDD22178789800091FA5 /* CustomNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 95B5CDAE2178789800091FA5 /* CustomNavigationController.m */; };
+		95B5CDD32178789800091FA5 /* BaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 95B5CDB12178789800091FA5 /* BaseModel.m */; };
+		95B5CDD42178789800091FA5 /* BaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 95B5CDB42178789800091FA5 /* BaseTableViewCell.m */; };
+		95B5CDD52178789800091FA5 /* BaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 95B5CDB52178789800091FA5 /* BaseView.m */; };
+		95B5CDD62178789800091FA5 /* CustomAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 95B5CDB62178789800091FA5 /* CustomAlertView.m */; };
+		95B5CDD72178789800091FA5 /* BaseTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 95B5CDB82178789800091FA5 /* BaseTableViewCell.xib */; };
+		95B5CDD82178789800091FA5 /* UIViewController+HUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 95B5CDBC2178789800091FA5 /* UIViewController+HUD.m */; };
+		95B5CDD92178789800091FA5 /* GCGAsyncSoctketManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 95B5CDBD2178789800091FA5 /* GCGAsyncSoctketManager.m */; };
+		95B5CDDA2178789800091FA5 /* NetWorkingTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 95B5CDBE2178789800091FA5 /* NetWorkingTool.m */; };
+		95B5CDDB2178789800091FA5 /* UIButton+AutoFontSize.m in Sources */ = {isa = PBXBuildFile; fileRef = 95B5CDBF2178789800091FA5 /* UIButton+AutoFontSize.m */; };
+		95B5CDDC2178789800091FA5 /* UIImage+Tool.m in Sources */ = {isa = PBXBuildFile; fileRef = 95B5CDC72178789800091FA5 /* UIImage+Tool.m */; };
+		95B5CDDD2178789800091FA5 /* NSString+MD5.m in Sources */ = {isa = PBXBuildFile; fileRef = 95B5CDC82178789800091FA5 /* NSString+MD5.m */; };
+		95B5CDDE2178789800091FA5 /* UploadParam.m in Sources */ = {isa = PBXBuildFile; fileRef = 95B5CDC92178789800091FA5 /* UploadParam.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +57,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		667A45C03CE73EA206192C22 /* libPods-QTCoreMain.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-QTCoreMain.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		95B5CD1A217876DF00091FA5 /* QTCoreMain.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QTCoreMain.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		95B5CD1D217876DF00091FA5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		95B5CD1E217876DF00091FA5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -51,6 +74,51 @@
 		95B5CD3D217876E100091FA5 /* QTCoreMainUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QTCoreMainUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		95B5CD41217876E100091FA5 /* QTCoreMainUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QTCoreMainUITests.m; sourceTree = "<group>"; };
 		95B5CD43217876E100091FA5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		95B5CD992178789800091FA5 /* UIView+Setup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Setup.m"; sourceTree = "<group>"; };
+		95B5CD9A2178789800091FA5 /* UIImageView+Setup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+Setup.m"; sourceTree = "<group>"; };
+		95B5CD9B2178789800091FA5 /* UIScrollView+Setup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+Setup.m"; sourceTree = "<group>"; };
+		95B5CD9C2178789800091FA5 /* UILabel+Setup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+Setup.m"; sourceTree = "<group>"; };
+		95B5CD9D2178789800091FA5 /* UIButton+Setup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Setup.h"; sourceTree = "<group>"; };
+		95B5CD9E2178789800091FA5 /* UITextField+Setup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+Setup.m"; sourceTree = "<group>"; };
+		95B5CD9F2178789800091FA5 /* UIView+Setup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Setup.h"; sourceTree = "<group>"; };
+		95B5CDA02178789800091FA5 /* UIScrollView+Setup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+Setup.h"; sourceTree = "<group>"; };
+		95B5CDA12178789800091FA5 /* UIImageView+Setup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+Setup.h"; sourceTree = "<group>"; };
+		95B5CDA22178789800091FA5 /* UILabel+Setup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+Setup.h"; sourceTree = "<group>"; };
+		95B5CDA32178789800091FA5 /* UITextField+Setup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+Setup.h"; sourceTree = "<group>"; };
+		95B5CDA42178789800091FA5 /* UIButton+Setup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Setup.m"; sourceTree = "<group>"; };
+		95B5CDA62178789800091FA5 /* UserModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserModel.m; sourceTree = "<group>"; };
+		95B5CDA72178789800091FA5 /* UserModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserModel.h; sourceTree = "<group>"; };
+		95B5CDA82178789800091FA5 /* QT.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QT.pch; sourceTree = "<group>"; };
+		95B5CDA92178789800091FA5 /* QTCore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QTCore.h; sourceTree = "<group>"; };
+		95B5CDAC2178789800091FA5 /* CustomNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomNavigationController.h; sourceTree = "<group>"; };
+		95B5CDAD2178789800091FA5 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		95B5CDAE2178789800091FA5 /* CustomNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomNavigationController.m; sourceTree = "<group>"; };
+		95B5CDAF2178789800091FA5 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		95B5CDB12178789800091FA5 /* BaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseModel.m; sourceTree = "<group>"; };
+		95B5CDB22178789800091FA5 /* BaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseModel.h; sourceTree = "<group>"; };
+		95B5CDB42178789800091FA5 /* BaseTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTableViewCell.m; sourceTree = "<group>"; };
+		95B5CDB52178789800091FA5 /* BaseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseView.m; sourceTree = "<group>"; };
+		95B5CDB62178789800091FA5 /* CustomAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomAlertView.m; sourceTree = "<group>"; };
+		95B5CDB72178789800091FA5 /* BaseTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTableViewCell.h; sourceTree = "<group>"; };
+		95B5CDB82178789800091FA5 /* BaseTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BaseTableViewCell.xib; sourceTree = "<group>"; };
+		95B5CDB92178789800091FA5 /* BaseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseView.h; sourceTree = "<group>"; };
+		95B5CDBA2178789800091FA5 /* CustomAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomAlertView.h; sourceTree = "<group>"; };
+		95B5CDBC2178789800091FA5 /* UIViewController+HUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+HUD.m"; sourceTree = "<group>"; };
+		95B5CDBD2178789800091FA5 /* GCGAsyncSoctketManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCGAsyncSoctketManager.m; sourceTree = "<group>"; };
+		95B5CDBE2178789800091FA5 /* NetWorkingTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetWorkingTool.m; sourceTree = "<group>"; };
+		95B5CDBF2178789800091FA5 /* UIButton+AutoFontSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+AutoFontSize.m"; sourceTree = "<group>"; };
+		95B5CDC02178789800091FA5 /* UIImage+Tool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Tool.h"; sourceTree = "<group>"; };
+		95B5CDC12178789800091FA5 /* UploadParam.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UploadParam.h; sourceTree = "<group>"; };
+		95B5CDC22178789800091FA5 /* NSString+MD5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MD5.h"; sourceTree = "<group>"; };
+		95B5CDC32178789800091FA5 /* UIButton+AutoFontSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+AutoFontSize.h"; sourceTree = "<group>"; };
+		95B5CDC42178789800091FA5 /* NetWorkingTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetWorkingTool.h; sourceTree = "<group>"; };
+		95B5CDC52178789800091FA5 /* GCGAsyncSoctketManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCGAsyncSoctketManager.h; sourceTree = "<group>"; };
+		95B5CDC62178789800091FA5 /* UIViewController+HUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+HUD.h"; sourceTree = "<group>"; };
+		95B5CDC72178789800091FA5 /* UIImage+Tool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Tool.m"; sourceTree = "<group>"; };
+		95B5CDC82178789800091FA5 /* NSString+MD5.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MD5.m"; sourceTree = "<group>"; };
+		95B5CDC92178789800091FA5 /* UploadParam.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UploadParam.m; sourceTree = "<group>"; };
+		AABAC3FEDAAE37F6DFEA6472 /* Pods-QTCoreMain.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QTCoreMain.debug.xcconfig"; path = "Pods/Target Support Files/Pods-QTCoreMain/Pods-QTCoreMain.debug.xcconfig"; sourceTree = "<group>"; };
+		AE6F84A75B8C29687555BE86 /* Pods-QTCoreMain.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QTCoreMain.release.xcconfig"; path = "Pods/Target Support Files/Pods-QTCoreMain/Pods-QTCoreMain.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +126,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				938312FAF36FC963107A82BE /* libPods-QTCoreMain.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,13 +147,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		013FF3FBB843E96DDF77AF88 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AABAC3FEDAAE37F6DFEA6472 /* Pods-QTCoreMain.debug.xcconfig */,
+				AE6F84A75B8C29687555BE86 /* Pods-QTCoreMain.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		613193FAE48A8E7634D5C967 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				667A45C03CE73EA206192C22 /* libPods-QTCoreMain.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		95B5CD11217876DF00091FA5 = {
 			isa = PBXGroup;
 			children = (
+				95B5CD972178789800091FA5 /* QTCore */,
 				95B5CD1C217876DF00091FA5 /* QTCoreMain */,
 				95B5CD35217876E100091FA5 /* QTCoreMainTests */,
 				95B5CD40217876E100091FA5 /* QTCoreMainUITests */,
 				95B5CD1B217876DF00091FA5 /* Products */,
+				013FF3FBB843E96DDF77AF88 /* Pods */,
+				613193FAE48A8E7634D5C967 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -132,6 +221,112 @@
 			path = QTCoreMainUITests;
 			sourceTree = "<group>";
 		};
+		95B5CD972178789800091FA5 /* QTCore */ = {
+			isa = PBXGroup;
+			children = (
+				95B5CD982178789800091FA5 /* Setup */,
+				95B5CDA52178789800091FA5 /* UserModel */,
+				95B5CDA82178789800091FA5 /* QT.pch */,
+				95B5CDA92178789800091FA5 /* QTCore.h */,
+				95B5CDAA2178789800091FA5 /* Base */,
+				95B5CDBB2178789800091FA5 /* Tool */,
+			);
+			path = QTCore;
+			sourceTree = "<group>";
+		};
+		95B5CD982178789800091FA5 /* Setup */ = {
+			isa = PBXGroup;
+			children = (
+				95B5CD992178789800091FA5 /* UIView+Setup.m */,
+				95B5CD9A2178789800091FA5 /* UIImageView+Setup.m */,
+				95B5CD9B2178789800091FA5 /* UIScrollView+Setup.m */,
+				95B5CD9C2178789800091FA5 /* UILabel+Setup.m */,
+				95B5CD9D2178789800091FA5 /* UIButton+Setup.h */,
+				95B5CD9E2178789800091FA5 /* UITextField+Setup.m */,
+				95B5CD9F2178789800091FA5 /* UIView+Setup.h */,
+				95B5CDA02178789800091FA5 /* UIScrollView+Setup.h */,
+				95B5CDA12178789800091FA5 /* UIImageView+Setup.h */,
+				95B5CDA22178789800091FA5 /* UILabel+Setup.h */,
+				95B5CDA32178789800091FA5 /* UITextField+Setup.h */,
+				95B5CDA42178789800091FA5 /* UIButton+Setup.m */,
+			);
+			path = Setup;
+			sourceTree = "<group>";
+		};
+		95B5CDA52178789800091FA5 /* UserModel */ = {
+			isa = PBXGroup;
+			children = (
+				95B5CDA62178789800091FA5 /* UserModel.m */,
+				95B5CDA72178789800091FA5 /* UserModel.h */,
+			);
+			path = UserModel;
+			sourceTree = "<group>";
+		};
+		95B5CDAA2178789800091FA5 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				95B5CDAB2178789800091FA5 /* Controller */,
+				95B5CDB02178789800091FA5 /* Model */,
+				95B5CDB32178789800091FA5 /* View */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		95B5CDAB2178789800091FA5 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				95B5CDAC2178789800091FA5 /* CustomNavigationController.h */,
+				95B5CDAD2178789800091FA5 /* BaseViewController.m */,
+				95B5CDAE2178789800091FA5 /* CustomNavigationController.m */,
+				95B5CDAF2178789800091FA5 /* BaseViewController.h */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		95B5CDB02178789800091FA5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				95B5CDB12178789800091FA5 /* BaseModel.m */,
+				95B5CDB22178789800091FA5 /* BaseModel.h */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		95B5CDB32178789800091FA5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				95B5CDB42178789800091FA5 /* BaseTableViewCell.m */,
+				95B5CDB52178789800091FA5 /* BaseView.m */,
+				95B5CDB62178789800091FA5 /* CustomAlertView.m */,
+				95B5CDB72178789800091FA5 /* BaseTableViewCell.h */,
+				95B5CDB82178789800091FA5 /* BaseTableViewCell.xib */,
+				95B5CDB92178789800091FA5 /* BaseView.h */,
+				95B5CDBA2178789800091FA5 /* CustomAlertView.h */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		95B5CDBB2178789800091FA5 /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				95B5CDBC2178789800091FA5 /* UIViewController+HUD.m */,
+				95B5CDBD2178789800091FA5 /* GCGAsyncSoctketManager.m */,
+				95B5CDBE2178789800091FA5 /* NetWorkingTool.m */,
+				95B5CDBF2178789800091FA5 /* UIButton+AutoFontSize.m */,
+				95B5CDC02178789800091FA5 /* UIImage+Tool.h */,
+				95B5CDC12178789800091FA5 /* UploadParam.h */,
+				95B5CDC22178789800091FA5 /* NSString+MD5.h */,
+				95B5CDC32178789800091FA5 /* UIButton+AutoFontSize.h */,
+				95B5CDC42178789800091FA5 /* NetWorkingTool.h */,
+				95B5CDC52178789800091FA5 /* GCGAsyncSoctketManager.h */,
+				95B5CDC62178789800091FA5 /* UIViewController+HUD.h */,
+				95B5CDC72178789800091FA5 /* UIImage+Tool.m */,
+				95B5CDC82178789800091FA5 /* NSString+MD5.m */,
+				95B5CDC92178789800091FA5 /* UploadParam.m */,
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -139,9 +334,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 95B5CD46217876E100091FA5 /* Build configuration list for PBXNativeTarget "QTCoreMain" */;
 			buildPhases = (
+				82362E24F6F6BF0BB0B17E03 /* [CP] Check Pods Manifest.lock */,
 				95B5CD16217876DF00091FA5 /* Sources */,
 				95B5CD17217876DF00091FA5 /* Frameworks */,
 				95B5CD18217876DF00091FA5 /* Resources */,
+				4D23880B5B995E34F5B172E3 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -235,6 +432,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				95B5CDD72178789800091FA5 /* BaseTableViewCell.xib in Resources */,
 				95B5CD2A217876E100091FA5 /* LaunchScreen.storyboard in Resources */,
 				95B5CD27217876E100091FA5 /* Assets.xcassets in Resources */,
 				95B5CD25217876DF00091FA5 /* Main.storyboard in Resources */,
@@ -257,14 +455,87 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4D23880B5B995E34F5B172E3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-QTCoreMain/Pods-QTCoreMain-resources.sh",
+				"${PODS_ROOT}/AVOSCloud/AVOS/AVOSCloud/AVOSCloud_Art.inc",
+				"${PODS_ROOT}/IQKeyboardManager/IQKeyboardManager/Resources/IQKeyboardManager.bundle",
+				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
+				"${PODS_ROOT}/SAMKeychain/Support/SAMKeychain.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AVOSCloud_Art.inc",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/IQKeyboardManager.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MJRefresh.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SAMKeychain.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-QTCoreMain/Pods-QTCoreMain-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		82362E24F6F6BF0BB0B17E03 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-QTCoreMain-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		95B5CD16217876DF00091FA5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				95B5CDD82178789800091FA5 /* UIViewController+HUD.m in Sources */,
+				95B5CDCF2178789800091FA5 /* UIButton+Setup.m in Sources */,
+				95B5CDCD2178789800091FA5 /* UILabel+Setup.m in Sources */,
+				95B5CDD52178789800091FA5 /* BaseView.m in Sources */,
+				95B5CDDE2178789800091FA5 /* UploadParam.m in Sources */,
+				95B5CDDD2178789800091FA5 /* NSString+MD5.m in Sources */,
+				95B5CDD92178789800091FA5 /* GCGAsyncSoctketManager.m in Sources */,
+				95B5CDD12178789800091FA5 /* BaseViewController.m in Sources */,
+				95B5CDCE2178789800091FA5 /* UITextField+Setup.m in Sources */,
 				95B5CD22217876DF00091FA5 /* ViewController.m in Sources */,
 				95B5CD2D217876E100091FA5 /* main.m in Sources */,
+				95B5CDCA2178789800091FA5 /* UIView+Setup.m in Sources */,
+				95B5CDDA2178789800091FA5 /* NetWorkingTool.m in Sources */,
+				95B5CDD32178789800091FA5 /* BaseModel.m in Sources */,
+				95B5CDD02178789800091FA5 /* UserModel.m in Sources */,
+				95B5CDD62178789800091FA5 /* CustomAlertView.m in Sources */,
+				95B5CDCC2178789800091FA5 /* UIScrollView+Setup.m in Sources */,
+				95B5CDDC2178789800091FA5 /* UIImage+Tool.m in Sources */,
 				95B5CD1F217876DF00091FA5 /* AppDelegate.m in Sources */,
+				95B5CDD22178789800091FA5 /* CustomNavigationController.m in Sources */,
+				95B5CDD42178789800091FA5 /* BaseTableViewCell.m in Sources */,
+				95B5CDDB2178789800091FA5 /* UIButton+AutoFontSize.m in Sources */,
+				95B5CDCB2178789800091FA5 /* UIImageView+Setup.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -433,9 +704,13 @@
 		};
 		95B5CD47217876E100091FA5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AABAC3FEDAAE37F6DFEA6472 /* Pods-QTCoreMain.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "/Users/bieqiutian/Desktop/masterBie的工具箱/远程仓库/QTCoreMain/QTCore/QT.pch";
 				INFOPLIST_FILE = QTCoreMain/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -449,9 +724,13 @@
 		};
 		95B5CD48217876E100091FA5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AE6F84A75B8C29687555BE86 /* Pods-QTCoreMain.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "/Users/bieqiutian/Desktop/masterBie的工具箱/远程仓库/QTCoreMain/QTCore/QT.pch";
 				INFOPLIST_FILE = QTCoreMain/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
