@@ -7,7 +7,8 @@
 //
 
 #import "AppDelegate.h"
-
+#import "QTYDY.h"
+#import "ViewController.h"
 @interface AppDelegate ()
 
 @end
@@ -17,6 +18,12 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    // Override point for customization after application launch.
+    self.window = [[UIWindow alloc] initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height)];
+    [self.window makeKeyAndVisible];
+    ViewController *vc = [ViewController new];
+    self.window.rootViewController = vc;
+    [QTYDY addToWindowWithImageNames:@[@"timg.jpeg",@"timg2.jpeg"]];
     return YES;
 }
 

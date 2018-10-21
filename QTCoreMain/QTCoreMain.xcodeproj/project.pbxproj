@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		938312FAF36FC963107A82BE /* libPods-QTCoreMain.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 667A45C03CE73EA206192C22 /* libPods-QTCoreMain.a */; };
+		958FCDD1217CA84D009F87C7 /* QTYDY.m in Sources */ = {isa = PBXBuildFile; fileRef = 958FCDCF217CA84D009F87C7 /* QTYDY.m */; };
+		958FCDD3217CA8D7009F87C7 /* timg.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 958FCDD2217CA8D7009F87C7 /* timg.jpeg */; };
+		958FCDD5217CA8DC009F87C7 /* timg2.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 958FCDD4217CA8DC009F87C7 /* timg2.jpeg */; };
 		95B5CD1F217876DF00091FA5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 95B5CD1E217876DF00091FA5 /* AppDelegate.m */; };
 		95B5CD22217876DF00091FA5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 95B5CD21217876DF00091FA5 /* ViewController.m */; };
 		95B5CD25217876DF00091FA5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95B5CD23217876DF00091FA5 /* Main.storyboard */; };
@@ -58,6 +61,10 @@
 
 /* Begin PBXFileReference section */
 		667A45C03CE73EA206192C22 /* libPods-QTCoreMain.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-QTCoreMain.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		958FCDCF217CA84D009F87C7 /* QTYDY.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QTYDY.m; sourceTree = "<group>"; };
+		958FCDD0217CA84D009F87C7 /* QTYDY.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QTYDY.h; sourceTree = "<group>"; };
+		958FCDD2217CA8D7009F87C7 /* timg.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = timg.jpeg; sourceTree = "<group>"; };
+		958FCDD4217CA8DC009F87C7 /* timg2.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = timg2.jpeg; sourceTree = "<group>"; };
 		95B5CD1A217876DF00091FA5 /* QTCoreMain.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QTCoreMain.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		95B5CD1D217876DF00091FA5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		95B5CD1E217876DF00091FA5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -164,6 +171,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		958FCDCE217CA84D009F87C7 /* CustomView */ = {
+			isa = PBXGroup;
+			children = (
+				958FCDCF217CA84D009F87C7 /* QTYDY.m */,
+				958FCDD0217CA84D009F87C7 /* QTYDY.h */,
+			);
+			path = CustomView;
+			sourceTree = "<group>";
+		};
 		95B5CD11217876DF00091FA5 = {
 			isa = PBXGroup;
 			children = (
@@ -190,6 +206,8 @@
 		95B5CD1C217876DF00091FA5 /* QTCoreMain */ = {
 			isa = PBXGroup;
 			children = (
+				958FCDD2217CA8D7009F87C7 /* timg.jpeg */,
+				958FCDD4217CA8DC009F87C7 /* timg2.jpeg */,
 				95B5CD1D217876DF00091FA5 /* AppDelegate.h */,
 				95B5CD1E217876DF00091FA5 /* AppDelegate.m */,
 				95B5CD20217876DF00091FA5 /* ViewController.h */,
@@ -224,6 +242,7 @@
 		95B5CD972178789800091FA5 /* QTCore */ = {
 			isa = PBXGroup;
 			children = (
+				958FCDCE217CA84D009F87C7 /* CustomView */,
 				95B5CD982178789800091FA5 /* Setup */,
 				95B5CDA52178789800091FA5 /* UserModel */,
 				95B5CDA82178789800091FA5 /* QT.pch */,
@@ -432,6 +451,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				958FCDD3217CA8D7009F87C7 /* timg.jpeg in Resources */,
+				958FCDD5217CA8DC009F87C7 /* timg2.jpeg in Resources */,
 				95B5CDD72178789800091FA5 /* BaseTableViewCell.xib in Resources */,
 				95B5CD2A217876E100091FA5 /* LaunchScreen.storyboard in Resources */,
 				95B5CD27217876E100091FA5 /* Assets.xcassets in Resources */,
@@ -534,6 +555,7 @@
 				95B5CD1F217876DF00091FA5 /* AppDelegate.m in Sources */,
 				95B5CDD22178789800091FA5 /* CustomNavigationController.m in Sources */,
 				95B5CDD42178789800091FA5 /* BaseTableViewCell.m in Sources */,
+				958FCDD1217CA84D009F87C7 /* QTYDY.m in Sources */,
 				95B5CDDB2178789800091FA5 /* UIButton+AutoFontSize.m in Sources */,
 				95B5CDCB2178789800091FA5 /* UIImageView+Setup.m in Sources */,
 			);
@@ -708,7 +730,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 57SV4T3X4K;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "/Users/bieqiutian/Desktop/masterBie的工具箱/远程仓库/QTCoreMain/QTCore/QT.pch";
 				INFOPLIST_FILE = QTCoreMain/Info.plist;
@@ -728,7 +750,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 57SV4T3X4K;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "/Users/bieqiutian/Desktop/masterBie的工具箱/远程仓库/QTCoreMain/QTCore/QT.pch";
 				INFOPLIST_FILE = QTCoreMain/Info.plist;
