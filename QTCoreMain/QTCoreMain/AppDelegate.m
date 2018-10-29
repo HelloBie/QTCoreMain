@@ -23,7 +23,20 @@
     [self.window makeKeyAndVisible];
     ViewController *vc = [ViewController new];
     self.window.rootViewController = vc;
-    [QTYDY addToWindowWithImageNames:@[@"timg.jpeg",@"timg2.jpeg"]];
+    NSMutableArray *buttons = [NSMutableArray array];
+    
+    for (int i = 0; i < 2; i++) {
+        UIButton *button = [UIButton new]
+        .set_frame(CGRectMake(0, 0, 200, 50))
+        .set_radius(25)
+        .set_center(CGPointMake(Width / 2.0, 300 + 30 * i))
+        .set_title(@[@"下一步",@"立即使用"][i])
+        .set_backgroundColor(@[[UIColor blueColor],[UIColor yellowColor]][i])
+        .set_titleColor([UIColor whiteColor]);
+        [buttons addObject:button];
+    }
+    
+    [QTYDY addToWindowWithImageNames:@[@"timg.jpeg",@"timg2.jpeg"] nextButtons:buttons];
     return YES;
 }
 

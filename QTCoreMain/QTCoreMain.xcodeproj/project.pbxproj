@@ -174,8 +174,8 @@
 		958FCDCE217CA84D009F87C7 /* CustomView */ = {
 			isa = PBXGroup;
 			children = (
-				958FCDCF217CA84D009F87C7 /* QTYDY.m */,
 				958FCDD0217CA84D009F87C7 /* QTYDY.h */,
+				958FCDCF217CA84D009F87C7 /* QTYDY.m */,
 			);
 			path = CustomView;
 			sourceTree = "<group>";
@@ -294,10 +294,10 @@
 		95B5CDAB2178789800091FA5 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				95B5CDAC2178789800091FA5 /* CustomNavigationController.h */,
-				95B5CDAD2178789800091FA5 /* BaseViewController.m */,
-				95B5CDAE2178789800091FA5 /* CustomNavigationController.m */,
 				95B5CDAF2178789800091FA5 /* BaseViewController.h */,
+				95B5CDAD2178789800091FA5 /* BaseViewController.m */,
+				95B5CDAC2178789800091FA5 /* CustomNavigationController.h */,
+				95B5CDAE2178789800091FA5 /* CustomNavigationController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -314,13 +314,13 @@
 		95B5CDB32178789800091FA5 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				95B5CDB42178789800091FA5 /* BaseTableViewCell.m */,
-				95B5CDB52178789800091FA5 /* BaseView.m */,
-				95B5CDB62178789800091FA5 /* CustomAlertView.m */,
 				95B5CDB72178789800091FA5 /* BaseTableViewCell.h */,
+				95B5CDB42178789800091FA5 /* BaseTableViewCell.m */,
 				95B5CDB82178789800091FA5 /* BaseTableViewCell.xib */,
 				95B5CDB92178789800091FA5 /* BaseView.h */,
+				95B5CDB52178789800091FA5 /* BaseView.m */,
 				95B5CDBA2178789800091FA5 /* CustomAlertView.h */,
+				95B5CDB62178789800091FA5 /* CustomAlertView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -328,19 +328,19 @@
 		95B5CDBB2178789800091FA5 /* Tool */ = {
 			isa = PBXGroup;
 			children = (
-				95B5CDBC2178789800091FA5 /* UIViewController+HUD.m */,
+				95B5CDC52178789800091FA5 /* GCGAsyncSoctketManager.h */,
 				95B5CDBD2178789800091FA5 /* GCGAsyncSoctketManager.m */,
+				95B5CDC42178789800091FA5 /* NetWorkingTool.h */,
 				95B5CDBE2178789800091FA5 /* NetWorkingTool.m */,
+				95B5CDC22178789800091FA5 /* NSString+MD5.h */,
+				95B5CDC82178789800091FA5 /* NSString+MD5.m */,
+				95B5CDC32178789800091FA5 /* UIButton+AutoFontSize.h */,
 				95B5CDBF2178789800091FA5 /* UIButton+AutoFontSize.m */,
 				95B5CDC02178789800091FA5 /* UIImage+Tool.h */,
-				95B5CDC12178789800091FA5 /* UploadParam.h */,
-				95B5CDC22178789800091FA5 /* NSString+MD5.h */,
-				95B5CDC32178789800091FA5 /* UIButton+AutoFontSize.h */,
-				95B5CDC42178789800091FA5 /* NetWorkingTool.h */,
-				95B5CDC52178789800091FA5 /* GCGAsyncSoctketManager.h */,
-				95B5CDC62178789800091FA5 /* UIViewController+HUD.h */,
 				95B5CDC72178789800091FA5 /* UIImage+Tool.m */,
-				95B5CDC82178789800091FA5 /* NSString+MD5.m */,
+				95B5CDC62178789800091FA5 /* UIViewController+HUD.h */,
+				95B5CDBC2178789800091FA5 /* UIViewController+HUD.m */,
+				95B5CDC12178789800091FA5 /* UploadParam.h */,
 				95B5CDC92178789800091FA5 /* UploadParam.m */,
 			);
 			path = Tool;
@@ -732,7 +732,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 57SV4T3X4K;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "/Users/bieqiutian/Desktop/masterBie的工具箱/远程仓库/QTCoreMain/QTCore/QT.pch";
+				GCC_PREFIX_HEADER = "/Users/bieqiutian/Desktop/工具篮/QTCoreMain/QTCore/QT.pch";
 				INFOPLIST_FILE = QTCoreMain/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -752,7 +752,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 57SV4T3X4K;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "/Users/bieqiutian/Desktop/masterBie的工具箱/远程仓库/QTCoreMain/QTCore/QT.pch";
+				GCC_PREFIX_HEADER = "/Users/bieqiutian/Desktop/工具篮/QTCoreMain/QTCore/QT.pch";
 				INFOPLIST_FILE = QTCoreMain/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
