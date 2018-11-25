@@ -13,4 +13,6 @@
 - (NSString *)md5String;
 - (BOOL)isPhoneNumber;
 -(BOOL)checkPassWord;// 密码正则
+
++ (NSString *)stringWithTxt:(NSString *)txtName;
 @end

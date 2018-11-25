@@ -9,16 +9,92 @@
 #import "BaseViewController.h"
 #import <MBProgressHUD.h>
 @interface BaseViewController ()
-@property(nonatomic, copy)void (^navletfaction)(); // 左侧返回键事件
-@property(nonatomic, copy)void (^navRightaction)(); // 左侧返回键事件
-@property(nonatomic, copy)void (^shopCartBlock)(); // 购物车事件
-@property(nonatomic, copy)void (^searchBlock)();   // 搜索事件
+@property(nonatomic, copy)void (^navletfaction)(void); // 左侧返回键事件
+@property(nonatomic, copy)void (^navRightaction)(void); // 左侧返回键事件
 @property(nonatomic, strong)MBProgressHUD *hud;
 @property (nonatomic, assign)NSInteger righthidden;
 @property(nonatomic, strong)UIImageView * navigationImageView;
 @end
 
 @implementation BaseViewController
+
+ + (instancetype)loadWithXib
+{
+    BaseViewController *vc = [[BaseViewController alloc] initWithNibName:NSStringFromClass([self class]) bundle:nil];
+    return vc;
+}
+
+-(void)showMessage:(NSString *)message
+{
+    dispatch_async(dispatch_get_main_queue(), ^{
+        
+        NSTimeInterval time = 2;
+        CGSize screenSize = [[UIScreen mainScreen] bounds].size;
+        
+        UIWindow * window = [UIApplication sharedApplication].keyWindow;
+        UIView *showview =  [[UIView alloc]init];
+        showview.backgroundColor = [UIColor grayColor];
+        showview.frame = CGRectMake(1, 1, 1, 1);
+        showview.alpha = 1.0f;
+        showview.layer.cornerRadius = 5.0f;
+        showview.layer.masksToBounds = YES;
+        [window addSubview:showview];
+        
+        UILabel *label = [[UILabel alloc]init];
+        NSMutableParagraphStyle *paragraphStyle = [[NSMutableParagraphStyle alloc]init];
+        paragraphStyle.lineBreakMode = NSLineBreakByWordWrapping;
+        
+        NSDictionary *attributes = @{NSFontAttributeName:[UIFont systemFontOfSize:15.f],
+                                     NSParagraphStyleAttributeName:paragraphStyle.copy};
+        
+        CGSize labelSize = [message boundingRectWithSize:CGSizeMake(207, 999)
+                                                 options:NSStringDrawingUsesLineFragmentOrigin
+                                              attributes:attributes context:nil].size;
+        
+        label.frame = CGRectMake(10, 5, labelSize.width +20, labelSize.height);
+        label.text = message;
+        label.textColor = [UIColor whiteColor];
+        label.textAlignment = 1;
+        label.backgroundColor = [UIColor clearColor];
+        label.font = [UIFont boldSystemFontOfSize:15];
+        [showview addSubview:label];
+        
+        showview.frame = CGRectMake((screenSize.width - labelSize.width - 20)/2,
+                                    screenSize.height - 300,
+                                    labelSize.width+40,
+                                    labelSize.height+10);
+        [UIView animateWithDuration:time animations:^{
+            showview.alpha = 0;
+        } completion:^(BOOL finished) {
+            [showview removeFromSuperview];
+        }];
+        
+    });
+}
+
+- (void)showHudAnimitonWithView
+{
+    dispatch_async(dispatch_get_main_queue(), ^{
+        [self.hud hideAnimated:YES];
+        [self.hud removeFromSuperViewOnHide];
+        AppDelegate *dele = (AppDelegate *)[UIApplication sharedApplication].delegate;
+        MBProgressHUD * hud = [MBProgressHUD showHUDAddedTo:dele.window animated:YES];
+        [hud showAnimated:YES];
+        self.hud = hud;
+        
+    });
+}
+
+- (void)hidHudAnimation
+{
+    dispatch_async(dispatch_get_main_queue(), ^{
+        [self.hud hideAnimated:YES];
+        [self.hud removeFromSuperViewOnHide];
+    });
+    
+}
+
+
 
 - (UserModel *)userModel
 {
@@ -70,10 +146,6 @@
     
 }
 
-
-
-
-
 - (void)viewDidLoad {
     [super viewDidLoad];
        
@@ -110,7 +182,7 @@
 
 #pragma mark - 设置nav左侧返回键
 
-- (void)setNavLeftBarButtonItemWith:(NSString *)titleText titleColor:(UIColor *)color image:(NSString *)image onclick:(void(^)())block
+- (void)setNavLeftBarButtonItemWith:(NSString *)titleText titleColor:(UIColor *)color image:(NSString *)image onclick:(void (^)(void))block
 {
     if (!titleText) {
         titleText = @"";
@@ -133,7 +205,7 @@
     self.navletfaction = block;
 }
 
-- (void)setNavRightBarButtonItemWith:(NSString *)titleText titleColor:(UIColor *)color image:(NSString *)image onclick:(void(^)())block
+- (void)setNavRightBarButtonItemWith:(NSString *)titleText titleColor:(UIColor *)color image:(NSString *)image onclick:(void(^)(void))block
 {
     if (!titleText) {
         titleText = @"";
@@ -184,31 +256,6 @@
  // Pass the selected object to the new view controller.
  }
  */
-
-- (void)showHudAnimitonWithView:(UIView *)view
-{
-    [self.hud hideAnimated:YES];
-    [self.hud removeFromSuperViewOnHide];
-    MBProgressHUD * hud = [MBProgressHUD showHUDAddedTo:view animated:YES];
-     hud.mode = MBProgressHUDModeText;
-    //hud.label.text = @"正在获取设备信息";
-    // hud.minSize = CGSizeMake(100, 100);
-    // NSString  *filePath = [[NSBundle bundleWithPath:[[NSBundle mainBundle] bundlePath]] pathForResource:@"loading" ofType:@"gif"];
-    // NSData  *imageData = [NSData dataWithContentsOfFile:filePath];
-    // UIImageView *loading = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 100, 100)];
-    // loading.image = [UIImage sd_animatedGIFWithData:imageData];
-    // hud.customView = loading;
-    // hud.color = [UIColor clearColor];
-    // hud.color = [hud.color colorWithAlphaComponent:0.0];
-    [hud showAnimated:YES];
-    self.hud = hud;
-}
-
-- (void)hidHudAnimation
-{
-    [self.hud hideAnimated:YES];
-    [self.hud removeFromSuperViewOnHide];
-}
 
 - (void)show:(NSString *)text icon:(NSString *)icon view:(UIView *)view
 {
