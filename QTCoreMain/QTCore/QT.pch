@@ -85,6 +85,7 @@
 #define QTBaseURL @"http://47.92.37.228:1024/"
 
 // md5加密
-
+//weakself
+#define WeakSelf __weak typeof(self) weakSelf = self;
 
 #endif /* public_pch */
