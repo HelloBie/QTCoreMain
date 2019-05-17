@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		938312FAF36FC963107A82BE /* libPods-QTCoreMain.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 667A45C03CE73EA206192C22 /* libPods-QTCoreMain.a */; };
+		953FA699228E4D9300287273 /* QTGCDTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 953FA696228E4D9300287273 /* QTGCDTimer.m */; };
+		953FA69A228E4D9300287273 /* QTTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 953FA698228E4D9300287273 /* QTTimer.m */; };
+		953FA69F228E4DD100287273 /* QTRuntimeHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 953FA69E228E4DD100287273 /* QTRuntimeHelper.m */; };
 		958FCDD3217CA8D7009F87C7 /* timg.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 958FCDD2217CA8D7009F87C7 /* timg.jpeg */; };
 		958FCDD5217CA8DC009F87C7 /* timg2.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 958FCDD4217CA8DC009F87C7 /* timg2.jpeg */; };
 		95B5CD1F217876DF00091FA5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 95B5CD1E217876DF00091FA5 /* AppDelegate.m */; };
@@ -62,6 +65,12 @@
 
 /* Begin PBXFileReference section */
 		667A45C03CE73EA206192C22 /* libPods-QTCoreMain.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-QTCoreMain.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		953FA695228E4D9300287273 /* QTGCDTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QTGCDTimer.h; sourceTree = "<group>"; };
+		953FA696228E4D9300287273 /* QTGCDTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QTGCDTimer.m; sourceTree = "<group>"; };
+		953FA697228E4D9300287273 /* QTTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QTTimer.h; sourceTree = "<group>"; };
+		953FA698228E4D9300287273 /* QTTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QTTimer.m; sourceTree = "<group>"; };
+		953FA69D228E4DD100287273 /* QTRuntimeHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QTRuntimeHelper.h; sourceTree = "<group>"; };
+		953FA69E228E4DD100287273 /* QTRuntimeHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QTRuntimeHelper.m; sourceTree = "<group>"; };
 		958FCDD2217CA8D7009F87C7 /* timg.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = timg.jpeg; sourceTree = "<group>"; };
 		958FCDD4217CA8DC009F87C7 /* timg2.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = timg2.jpeg; sourceTree = "<group>"; };
 		95B5CD1A217876DF00091FA5 /* QTCoreMain.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QTCoreMain.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -171,6 +180,26 @@
 				667A45C03CE73EA206192C22 /* libPods-QTCoreMain.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		953FA694228E4D7700287273 /* 定时器 */ = {
+			isa = PBXGroup;
+			children = (
+				953FA695228E4D9300287273 /* QTGCDTimer.h */,
+				953FA696228E4D9300287273 /* QTGCDTimer.m */,
+				953FA697228E4D9300287273 /* QTTimer.h */,
+				953FA698228E4D9300287273 /* QTTimer.m */,
+			);
+			path = "定时器";
+			sourceTree = "<group>";
+		};
+		953FA69C228E4DBA00287273 /* runtime */ = {
+			isa = PBXGroup;
+			children = (
+				953FA69D228E4DD100287273 /* QTRuntimeHelper.h */,
+				953FA69E228E4DD100287273 /* QTRuntimeHelper.m */,
+			);
+			path = runtime;
 			sourceTree = "<group>";
 		};
 		95B5CD11217876DF00091FA5 = {
@@ -357,6 +386,8 @@
 		95BA4B7921AA690900684865 /* Tool */ = {
 			isa = PBXGroup;
 			children = (
+				953FA69C228E4DBA00287273 /* runtime */,
+				953FA694228E4D7700287273 /* 定时器 */,
 				95BA4B8721AA690900684865 /* 图片 */,
 				95BA4B7B21AA690900684865 /* 网络请求 */,
 				95BA4B8121AA690900684865 /* 字符串 */,
@@ -594,6 +625,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				953FA69A228E4D9300287273 /* QTTimer.m in Sources */,
 				95BA4B9721AA690900684865 /* BaseView.m in Sources */,
 				95BA4B8F21AA690900684865 /* UIButton+Setup.m in Sources */,
 				95BA4B8D21AA690900684865 /* UILabel+Setup.m in Sources */,
@@ -614,10 +646,12 @@
 				95BA4B8C21AA690900684865 /* UIScrollView+Setup.m in Sources */,
 				95B5CD1F217876DF00091FA5 /* AppDelegate.m in Sources */,
 				95BA4B9321AA690900684865 /* BaseViewController.m in Sources */,
+				953FA699228E4D9300287273 /* QTGCDTimer.m in Sources */,
 				95BA4B9621AA690900684865 /* BaseTableViewCell.m in Sources */,
 				95BA4B9021AA690900684865 /* UIButton+AutoFontSize.m in Sources */,
 				95BA4B8B21AA690900684865 /* UIImageView+Setup.m in Sources */,
 				95BA4B9121AA690900684865 /* QTYDY.m in Sources */,
+				953FA69F228E4DD100287273 /* QTRuntimeHelper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
