@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "QTYDY.h"
+
 #import "ViewController.h"
 @interface AppDelegate ()
 
@@ -15,6 +16,10 @@
 
 @implementation AppDelegate
 
+- (void)addmethTest
+{
+    NSLog(@"methadd success");
+}
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.

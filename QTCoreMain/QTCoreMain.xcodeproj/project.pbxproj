@@ -11,6 +11,9 @@
 		953FA699228E4D9300287273 /* QTGCDTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 953FA696228E4D9300287273 /* QTGCDTimer.m */; };
 		953FA69A228E4D9300287273 /* QTTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 953FA698228E4D9300287273 /* QTTimer.m */; };
 		953FA69F228E4DD100287273 /* QTRuntimeHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 953FA69E228E4DD100287273 /* QTRuntimeHelper.m */; };
+		9559276422E94C6F00A8FAD0 /* QTBluetoothHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 9559276322E94C6F00A8FAD0 /* QTBluetoothHelper.m */; };
+		9573241D22CC3843008AE9FB /* TopAnimationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9573241C22CC3842008AE9FB /* TopAnimationView.m */; };
+		9583F06B22AE2F4E009DECC3 /* QTThred.m in Sources */ = {isa = PBXBuildFile; fileRef = 9583F06A22AE2F4E009DECC3 /* QTThred.m */; };
 		958FCDD3217CA8D7009F87C7 /* timg.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 958FCDD2217CA8D7009F87C7 /* timg.jpeg */; };
 		958FCDD5217CA8DC009F87C7 /* timg2.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 958FCDD4217CA8DC009F87C7 /* timg2.jpeg */; };
 		95B5CD1F217876DF00091FA5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 95B5CD1E217876DF00091FA5 /* AppDelegate.m */; };
@@ -71,6 +74,12 @@
 		953FA698228E4D9300287273 /* QTTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QTTimer.m; sourceTree = "<group>"; };
 		953FA69D228E4DD100287273 /* QTRuntimeHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QTRuntimeHelper.h; sourceTree = "<group>"; };
 		953FA69E228E4DD100287273 /* QTRuntimeHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QTRuntimeHelper.m; sourceTree = "<group>"; };
+		9559276222E94C6F00A8FAD0 /* QTBluetoothHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QTBluetoothHelper.h; sourceTree = "<group>"; };
+		9559276322E94C6F00A8FAD0 /* QTBluetoothHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QTBluetoothHelper.m; sourceTree = "<group>"; };
+		9573241B22CC3842008AE9FB /* TopAnimationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopAnimationView.h; sourceTree = "<group>"; };
+		9573241C22CC3842008AE9FB /* TopAnimationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TopAnimationView.m; sourceTree = "<group>"; };
+		9583F06922AE2F4E009DECC3 /* QTThred.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QTThred.h; sourceTree = "<group>"; };
+		9583F06A22AE2F4E009DECC3 /* QTThred.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QTThred.m; sourceTree = "<group>"; };
 		958FCDD2217CA8D7009F87C7 /* timg.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = timg.jpeg; sourceTree = "<group>"; };
 		958FCDD4217CA8DC009F87C7 /* timg2.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = timg2.jpeg; sourceTree = "<group>"; };
 		95B5CD1A217876DF00091FA5 /* QTCoreMain.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QTCoreMain.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -202,6 +211,24 @@
 			path = runtime;
 			sourceTree = "<group>";
 		};
+		9559275E22E94BE000A8FAD0 /* 蓝牙 */ = {
+			isa = PBXGroup;
+			children = (
+				9559276222E94C6F00A8FAD0 /* QTBluetoothHelper.h */,
+				9559276322E94C6F00A8FAD0 /* QTBluetoothHelper.m */,
+			);
+			path = "蓝牙";
+			sourceTree = "<group>";
+		};
+		9583F06822AE2E9B009DECC3 /* 保活线程 */ = {
+			isa = PBXGroup;
+			children = (
+				9583F06922AE2F4E009DECC3 /* QTThred.h */,
+				9583F06A22AE2F4E009DECC3 /* QTThred.m */,
+			);
+			path = "保活线程";
+			sourceTree = "<group>";
+		};
 		95B5CD11217876DF00091FA5 = {
 			isa = PBXGroup;
 			children = (
@@ -230,6 +257,8 @@
 			children = (
 				958FCDD2217CA8D7009F87C7 /* timg.jpeg */,
 				958FCDD4217CA8DC009F87C7 /* timg2.jpeg */,
+				9573241B22CC3842008AE9FB /* TopAnimationView.h */,
+				9573241C22CC3842008AE9FB /* TopAnimationView.m */,
 				95B5CD1D217876DF00091FA5 /* AppDelegate.h */,
 				95B5CD1E217876DF00091FA5 /* AppDelegate.m */,
 				95B5CD20217876DF00091FA5 /* ViewController.h */,
@@ -288,18 +317,18 @@
 		95BA4B4F21AA690800684865 /* 快速设置 */ = {
 			isa = PBXGroup;
 			children = (
-				95BA4B5021AA690800684865 /* UIView+Setup.m */,
-				95BA4B5121AA690800684865 /* UIImageView+Setup.m */,
-				95BA4B5221AA690800684865 /* UIScrollView+Setup.m */,
-				95BA4B5321AA690800684865 /* UILabel+Setup.m */,
 				95BA4B5421AA690800684865 /* UIButton+Setup.h */,
+				95BA4B5B21AA690800684865 /* UIButton+Setup.m */,
+				95BA4B5821AA690800684865 /* UIImageView+Setup.h */,
+				95BA4B5121AA690800684865 /* UIImageView+Setup.m */,
+				95BA4B5921AA690800684865 /* UILabel+Setup.h */,
+				95BA4B5321AA690800684865 /* UILabel+Setup.m */,
+				95BA4B5721AA690800684865 /* UIScrollView+Setup.h */,
+				95BA4B5221AA690800684865 /* UIScrollView+Setup.m */,
+				95BA4B5A21AA690800684865 /* UITextField+Setup.h */,
 				95BA4B5521AA690800684865 /* UITextField+Setup.m */,
 				95BA4B5621AA690800684865 /* UIView+Setup.h */,
-				95BA4B5721AA690800684865 /* UIScrollView+Setup.h */,
-				95BA4B5821AA690800684865 /* UIImageView+Setup.h */,
-				95BA4B5921AA690800684865 /* UILabel+Setup.h */,
-				95BA4B5A21AA690800684865 /* UITextField+Setup.h */,
-				95BA4B5B21AA690800684865 /* UIButton+Setup.m */,
+				95BA4B5021AA690800684865 /* UIView+Setup.m */,
 			);
 			path = "快速设置";
 			sourceTree = "<group>";
@@ -386,6 +415,8 @@
 		95BA4B7921AA690900684865 /* Tool */ = {
 			isa = PBXGroup;
 			children = (
+				9559275E22E94BE000A8FAD0 /* 蓝牙 */,
+				9583F06822AE2E9B009DECC3 /* 保活线程 */,
 				953FA69C228E4DBA00287273 /* runtime */,
 				953FA694228E4D7700287273 /* 定时器 */,
 				95BA4B8721AA690900684865 /* 图片 */,
@@ -633,7 +664,9 @@
 				95BA4B9C21AA690900684865 /* UploadParam.m in Sources */,
 				95BA4B9D21AA690900684865 /* NSString+MD5.m in Sources */,
 				95BA4B9421AA690900684865 /* CustomNavigationController.m in Sources */,
+				9583F06B22AE2F4E009DECC3 /* QTThred.m in Sources */,
 				95BA4B9521AA690900684865 /* BaseModel.m in Sources */,
+				9573241D22CC3843008AE9FB /* TopAnimationView.m in Sources */,
 				95BA4B9B21AA690900684865 /* NetWorkingTool.m in Sources */,
 				95BA4B9A21AA690900684865 /* UIViewController+HUD.m in Sources */,
 				95BA4B9221AA690900684865 /* UserModel.m in Sources */,
@@ -650,6 +683,7 @@
 				95BA4B9621AA690900684865 /* BaseTableViewCell.m in Sources */,
 				95BA4B9021AA690900684865 /* UIButton+AutoFontSize.m in Sources */,
 				95BA4B8B21AA690900684865 /* UIImageView+Setup.m in Sources */,
+				9559276422E94C6F00A8FAD0 /* QTBluetoothHelper.m in Sources */,
 				95BA4B9121AA690900684865 /* QTYDY.m in Sources */,
 				953FA69F228E4DD100287273 /* QTRuntimeHelper.m in Sources */,
 			);
@@ -825,6 +859,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 57SV4T3X4K;
+				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "/Users/bieqiutian/Desktop/工具篮/QTCoreMain/QTCore/QT.pch";
 				INFOPLIST_FILE = QTCoreMain/Info.plist;
@@ -845,6 +880,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 57SV4T3X4K;
+				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "/Users/bieqiutian/Desktop/工具篮/QTCoreMain/QTCore/QT.pch";
 				INFOPLIST_FILE = QTCoreMain/Info.plist;
