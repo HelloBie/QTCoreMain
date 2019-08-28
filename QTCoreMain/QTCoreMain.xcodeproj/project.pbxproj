@@ -8,10 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		938312FAF36FC963107A82BE /* libPods-QTCoreMain.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 667A45C03CE73EA206192C22 /* libPods-QTCoreMain.a */; };
+		9508899622FBB91100160669 /* libmp3lame.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9559277B22F0289600A8FAD0 /* libmp3lame.a */; };
+		950889AA23153FC700160669 /* QTSegmentContentVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 950889A923153FC700160669 /* QTSegmentContentVC.m */; };
+		950889AD2315411200160669 /* QTSegmentBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 950889AC2315411200160669 /* QTSegmentBar.m */; };
+		950889B02315414100160669 /* QTSegmentConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 950889AF2315414100160669 /* QTSegmentConfig.m */; };
+		950889B62315449700160669 /* QTSegmentScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 950889B52315449700160669 /* QTSegmentScrollView.m */; };
+		951FA96822F6B73B00445DBA /* QTFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 951FA96722F6B73B00445DBA /* QTFileManager.m */; };
 		953FA699228E4D9300287273 /* QTGCDTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 953FA696228E4D9300287273 /* QTGCDTimer.m */; };
 		953FA69A228E4D9300287273 /* QTTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 953FA698228E4D9300287273 /* QTTimer.m */; };
 		953FA69F228E4DD100287273 /* QTRuntimeHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 953FA69E228E4DD100287273 /* QTRuntimeHelper.m */; };
 		9559276422E94C6F00A8FAD0 /* QTBluetoothHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 9559276322E94C6F00A8FAD0 /* QTBluetoothHelper.m */; };
+		9559276722EDA75200A8FAD0 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9559276622EDA75200A8FAD0 /* MapViewController.m */; };
+		9559276E22F019FE00A8FAD0 /* QTAudioTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 9559276D22F019FE00A8FAD0 /* QTAudioTool.m */; };
+		9559277022F01BDF00A8FAD0 /* 2.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 9559276F22F01BDF00A8FAD0 /* 2.mp4 */; };
+		9559277222F01BE400A8FAD0 /* 1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 9559277122F01BE400A8FAD0 /* 1.mp4 */; };
+		9559277422F01E7B00A8FAD0 /* 3.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 9559277322F01E7A00A8FAD0 /* 3.m4a */; };
+		9559277E22F0308000A8FAD0 /* Mp3File.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9559277D22F0308000A8FAD0 /* Mp3File.mp3 */; };
 		9573241D22CC3843008AE9FB /* TopAnimationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9573241C22CC3842008AE9FB /* TopAnimationView.m */; };
 		9583F06B22AE2F4E009DECC3 /* QTThred.m in Sources */ = {isa = PBXBuildFile; fileRef = 9583F06A22AE2F4E009DECC3 /* QTThred.m */; };
 		958FCDD3217CA8D7009F87C7 /* timg.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 958FCDD2217CA8D7009F87C7 /* timg.jpeg */; };
@@ -68,6 +80,16 @@
 
 /* Begin PBXFileReference section */
 		667A45C03CE73EA206192C22 /* libPods-QTCoreMain.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-QTCoreMain.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		950889A823153FC700160669 /* QTSegmentContentVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QTSegmentContentVC.h; sourceTree = "<group>"; };
+		950889A923153FC700160669 /* QTSegmentContentVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QTSegmentContentVC.m; sourceTree = "<group>"; };
+		950889AB2315411200160669 /* QTSegmentBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QTSegmentBar.h; sourceTree = "<group>"; };
+		950889AC2315411200160669 /* QTSegmentBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QTSegmentBar.m; sourceTree = "<group>"; };
+		950889AE2315414100160669 /* QTSegmentConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QTSegmentConfig.h; sourceTree = "<group>"; };
+		950889AF2315414100160669 /* QTSegmentConfig.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QTSegmentConfig.m; sourceTree = "<group>"; };
+		950889B42315449700160669 /* QTSegmentScrollView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QTSegmentScrollView.h; sourceTree = "<group>"; };
+		950889B52315449700160669 /* QTSegmentScrollView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QTSegmentScrollView.m; sourceTree = "<group>"; };
+		951FA96622F6B73B00445DBA /* QTFileManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QTFileManager.h; sourceTree = "<group>"; };
+		951FA96722F6B73B00445DBA /* QTFileManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QTFileManager.m; sourceTree = "<group>"; };
 		953FA695228E4D9300287273 /* QTGCDTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QTGCDTimer.h; sourceTree = "<group>"; };
 		953FA696228E4D9300287273 /* QTGCDTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QTGCDTimer.m; sourceTree = "<group>"; };
 		953FA697228E4D9300287273 /* QTTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QTTimer.h; sourceTree = "<group>"; };
@@ -76,6 +98,16 @@
 		953FA69E228E4DD100287273 /* QTRuntimeHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QTRuntimeHelper.m; sourceTree = "<group>"; };
 		9559276222E94C6F00A8FAD0 /* QTBluetoothHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QTBluetoothHelper.h; sourceTree = "<group>"; };
 		9559276322E94C6F00A8FAD0 /* QTBluetoothHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QTBluetoothHelper.m; sourceTree = "<group>"; };
+		9559276522EDA75200A8FAD0 /* MapViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
+		9559276622EDA75200A8FAD0 /* MapViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
+		9559276C22F019FE00A8FAD0 /* QTAudioTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QTAudioTool.h; sourceTree = "<group>"; };
+		9559276D22F019FE00A8FAD0 /* QTAudioTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QTAudioTool.m; sourceTree = "<group>"; };
+		9559276F22F01BDF00A8FAD0 /* 2.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = 2.mp4; sourceTree = "<group>"; };
+		9559277122F01BE400A8FAD0 /* 1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = 1.mp4; sourceTree = "<group>"; };
+		9559277322F01E7A00A8FAD0 /* 3.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 3.m4a; sourceTree = "<group>"; };
+		9559277A22F0289600A8FAD0 /* lame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lame.h; sourceTree = "<group>"; };
+		9559277B22F0289600A8FAD0 /* libmp3lame.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libmp3lame.a; sourceTree = "<group>"; };
+		9559277D22F0308000A8FAD0 /* Mp3File.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Mp3File.mp3; sourceTree = "<group>"; };
 		9573241B22CC3842008AE9FB /* TopAnimationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopAnimationView.h; sourceTree = "<group>"; };
 		9573241C22CC3842008AE9FB /* TopAnimationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TopAnimationView.m; sourceTree = "<group>"; };
 		9583F06922AE2F4E009DECC3 /* QTThred.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QTThred.h; sourceTree = "<group>"; };
@@ -154,6 +186,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				938312FAF36FC963107A82BE /* libPods-QTCoreMain.a in Frameworks */,
+				9508899622FBB91100160669 /* libmp3lame.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -189,6 +222,32 @@
 				667A45C03CE73EA206192C22 /* libPods-QTCoreMain.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		950889A723153E5400160669 /* 旋转木马 */ = {
+			isa = PBXGroup;
+			children = (
+				950889A823153FC700160669 /* QTSegmentContentVC.h */,
+				950889A923153FC700160669 /* QTSegmentContentVC.m */,
+				950889AB2315411200160669 /* QTSegmentBar.h */,
+				950889AC2315411200160669 /* QTSegmentBar.m */,
+				950889AE2315414100160669 /* QTSegmentConfig.h */,
+				950889AF2315414100160669 /* QTSegmentConfig.m */,
+				950889B42315449700160669 /* QTSegmentScrollView.h */,
+				950889B52315449700160669 /* QTSegmentScrollView.m */,
+			);
+			path = "旋转木马";
+			sourceTree = "<group>";
+		};
+		951FA96522F6B6FD00445DBA /* 音频管理 */ = {
+			isa = PBXGroup;
+			children = (
+				9559276C22F019FE00A8FAD0 /* QTAudioTool.h */,
+				9559276D22F019FE00A8FAD0 /* QTAudioTool.m */,
+				9559277B22F0289600A8FAD0 /* libmp3lame.a */,
+				9559277A22F0289600A8FAD0 /* lame.h */,
+			);
+			path = "音频管理";
 			sourceTree = "<group>";
 		};
 		953FA694228E4D7700287273 /* 定时器 */ = {
@@ -255,6 +314,8 @@
 		95B5CD1C217876DF00091FA5 /* QTCoreMain */ = {
 			isa = PBXGroup;
 			children = (
+				9559277122F01BE400A8FAD0 /* 1.mp4 */,
+				9559276F22F01BDF00A8FAD0 /* 2.mp4 */,
 				958FCDD2217CA8D7009F87C7 /* timg.jpeg */,
 				958FCDD4217CA8DC009F87C7 /* timg2.jpeg */,
 				9573241B22CC3842008AE9FB /* TopAnimationView.h */,
@@ -268,6 +329,8 @@
 				95B5CD28217876E100091FA5 /* LaunchScreen.storyboard */,
 				95B5CD2B217876E100091FA5 /* Info.plist */,
 				95B5CD2C217876E100091FA5 /* main.m */,
+				9559276522EDA75200A8FAD0 /* MapViewController.h */,
+				9559276622EDA75200A8FAD0 /* MapViewController.m */,
 			);
 			path = QTCoreMain;
 			sourceTree = "<group>";
@@ -293,6 +356,8 @@
 		95BA4B4D21AA690800684865 /* QTCore */ = {
 			isa = PBXGroup;
 			children = (
+				9559277D22F0308000A8FAD0 /* Mp3File.mp3 */,
+				9559277322F01E7A00A8FAD0 /* 3.m4a */,
 				95BA4BA021AA69FE00684865 /* 房贷计算器隐私政策.txt */,
 				95BA4B4E21AA690800684865 /* Setup */,
 				95BA4B5F21AA690800684865 /* CustomView */,
@@ -345,6 +410,7 @@
 		95BA4B5F21AA690800684865 /* CustomView */ = {
 			isa = PBXGroup;
 			children = (
+				950889A723153E5400160669 /* 旋转木马 */,
 				95BA4B6021AA690800684865 /* 引导页 */,
 			);
 			path = CustomView;
@@ -415,6 +481,7 @@
 		95BA4B7921AA690900684865 /* Tool */ = {
 			isa = PBXGroup;
 			children = (
+				951FA96522F6B6FD00445DBA /* 音频管理 */,
 				9559275E22E94BE000A8FAD0 /* 蓝牙 */,
 				9583F06822AE2E9B009DECC3 /* 保活线程 */,
 				953FA69C228E4DBA00287273 /* runtime */,
@@ -425,6 +492,8 @@
 				95BA4B8421AA690900684865 /* socket */,
 				95BA4B8021AA690900684865 /* UIViewController+HUD.h */,
 				95BA4B7A21AA690900684865 /* UIViewController+HUD.m */,
+				951FA96622F6B73B00445DBA /* QTFileManager.h */,
+				951FA96722F6B73B00445DBA /* QTFileManager.m */,
 			);
 			path = Tool;
 			sourceTree = "<group>";
@@ -576,8 +645,12 @@
 				95BA4B9921AA690900684865 /* BaseTableViewCell.xib in Resources */,
 				958FCDD3217CA8D7009F87C7 /* timg.jpeg in Resources */,
 				958FCDD5217CA8DC009F87C7 /* timg2.jpeg in Resources */,
+				9559277222F01BE400A8FAD0 /* 1.mp4 in Resources */,
 				95B5CD2A217876E100091FA5 /* LaunchScreen.storyboard in Resources */,
+				9559277022F01BDF00A8FAD0 /* 2.mp4 in Resources */,
 				95B5CD27217876E100091FA5 /* Assets.xcassets in Resources */,
+				9559277422F01E7B00A8FAD0 /* 3.m4a in Resources */,
+				9559277E22F0308000A8FAD0 /* Mp3File.mp3 in Resources */,
 				95B5CD25217876DF00091FA5 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -609,6 +682,7 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-QTCoreMain/Pods-QTCoreMain-resources.sh",
 				"${PODS_ROOT}/AVOSCloud/AVOS/AVOSCloud/AVOSCloud_Art.inc",
+				"${PODS_ROOT}/BaiduMapKit/BaiduMapKit/BaiduMapAPI_Map.framework/mapapi.bundle",
 				"${PODS_ROOT}/IQKeyboardManager/IQKeyboardManager/Resources/IQKeyboardManager.bundle",
 				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
 				"${PODS_ROOT}/SAMKeychain/Support/SAMKeychain.bundle",
@@ -618,6 +692,7 @@
 			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AVOSCloud_Art.inc",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/mapapi.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/IQKeyboardManager.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MJRefresh.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SAMKeychain.bundle",
@@ -662,16 +737,20 @@
 				95BA4B8D21AA690900684865 /* UILabel+Setup.m in Sources */,
 				95BA4B9F21AA690900684865 /* UIImage+Tool.m in Sources */,
 				95BA4B9C21AA690900684865 /* UploadParam.m in Sources */,
+				950889B02315414100160669 /* QTSegmentConfig.m in Sources */,
 				95BA4B9D21AA690900684865 /* NSString+MD5.m in Sources */,
 				95BA4B9421AA690900684865 /* CustomNavigationController.m in Sources */,
 				9583F06B22AE2F4E009DECC3 /* QTThred.m in Sources */,
 				95BA4B9521AA690900684865 /* BaseModel.m in Sources */,
+				951FA96822F6B73B00445DBA /* QTFileManager.m in Sources */,
 				9573241D22CC3843008AE9FB /* TopAnimationView.m in Sources */,
 				95BA4B9B21AA690900684865 /* NetWorkingTool.m in Sources */,
 				95BA4B9A21AA690900684865 /* UIViewController+HUD.m in Sources */,
 				95BA4B9221AA690900684865 /* UserModel.m in Sources */,
+				9559276722EDA75200A8FAD0 /* MapViewController.m in Sources */,
 				95BA4B9821AA690900684865 /* CustomAlertView.m in Sources */,
 				95BA4B8E21AA690900684865 /* UITextField+Setup.m in Sources */,
+				950889B62315449700160669 /* QTSegmentScrollView.m in Sources */,
 				95B5CD22217876DF00091FA5 /* ViewController.m in Sources */,
 				95BA4B9E21AA690900684865 /* GCGAsyncSoctketManager.m in Sources */,
 				95B5CD2D217876E100091FA5 /* main.m in Sources */,
@@ -679,11 +758,14 @@
 				95BA4B8C21AA690900684865 /* UIScrollView+Setup.m in Sources */,
 				95B5CD1F217876DF00091FA5 /* AppDelegate.m in Sources */,
 				95BA4B9321AA690900684865 /* BaseViewController.m in Sources */,
+				950889AA23153FC700160669 /* QTSegmentContentVC.m in Sources */,
 				953FA699228E4D9300287273 /* QTGCDTimer.m in Sources */,
 				95BA4B9621AA690900684865 /* BaseTableViewCell.m in Sources */,
 				95BA4B9021AA690900684865 /* UIButton+AutoFontSize.m in Sources */,
 				95BA4B8B21AA690900684865 /* UIImageView+Setup.m in Sources */,
 				9559276422E94C6F00A8FAD0 /* QTBluetoothHelper.m in Sources */,
+				9559276E22F019FE00A8FAD0 /* QTAudioTool.m in Sources */,
+				950889AD2315411200160669 /* QTSegmentBar.m in Sources */,
 				95BA4B9121AA690900684865 /* QTYDY.m in Sources */,
 				953FA69F228E4DD100287273 /* QTRuntimeHelper.m in Sources */,
 			);
@@ -867,6 +949,11 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/QTCore/Tool",
+					"$(PROJECT_DIR)/QTCore/Tool/音频管理",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.bqt.www.QTCoreMain;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -887,6 +974,11 @@
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/QTCore/Tool",
+					"$(PROJECT_DIR)/QTCore/Tool/音频管理",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.bqt.www.QTCoreMain;
 				PRODUCT_NAME = "$(TARGET_NAME)";

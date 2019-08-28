@@ -85,20 +85,20 @@ static QTBluetoothHelper *_helper;
     switch (central.state) {
 
         case CBManagerStateUnknown:
-            NSLog(@">>>CBManagerStateUnknown");
+            NSLog(@">>>CBManagerStateUnknown --  蓝牙状态未知");
             break;
         case CBManagerStateUnsupported:
-            NSLog(@">>>CBManagerStateUnsupported");
+            NSLog(@">>>CBManagerStateUnsupported -- 不支持蓝牙");
             break;
         case CBManagerStateUnauthorized:
-            NSLog(@">>>CBManagerStateUnauthorized");
+            NSLog(@">>>CBManagerStateUnauthorized --  蓝牙未授权");
             break;
         case CBManagerStatePoweredOff:
-            NSLog(@">>>CBManagerStatePoweredOff");
+            NSLog(@">>>CBManagerStatePoweredOff -- 蓝牙关闭");
             break;
         case CBManagerStatePoweredOn:
         {
-            NSLog(@">>>CBManagerStatePoweredOn");
+            NSLog(@">>>CBManagerStatePoweredOn -- 蓝牙开启");
             // 开始扫描周围的外设。
             /*
              -- 两个参数为Nil表示默认扫描所有可见蓝牙设备。
@@ -128,6 +128,7 @@ static QTBluetoothHelper *_helper;
 //                    if ([self.delegate respondsToSelector:@selector(dataWithBluetoothDic:)]) {
 //                        [self.delegate dataWithBluetoothDic:_deviceDic];
 //                    }
+                    self.findDevices(_deviceDic);
                 }
             }
         }

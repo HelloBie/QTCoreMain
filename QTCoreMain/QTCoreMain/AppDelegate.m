@@ -8,7 +8,8 @@
 
 #import "AppDelegate.h"
 #import "QTYDY.h"
-
+#import <BaiduMapAPI_Base/BMKBaseComponent.h>
+#import <BMKLocationkit/BMKLocationComponent.h>
 #import "ViewController.h"
 @interface AppDelegate ()
 
@@ -24,6 +25,14 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     // Override point for customization after application launch.
+    BMKMapManager *mapManager = [[BMKMapManager alloc] init];
+    // 如果要关注网络及授权验证事件，请设定generalDelegate参数
+    BOOL ret = [mapManager start:@"WBxYqm4huBGfAePvaADzaiuwV3rYkZT0"  generalDelegate:nil];
+    if (!ret) {
+        NSLog(@"manager start failed!");
+    }
+    
+    
     self.window = [[UIWindow alloc] initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height)];
     [self.window makeKeyAndVisible];
     ViewController *vc = [ViewController new];

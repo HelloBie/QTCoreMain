@@ -6,7 +6,7 @@ target 'QTCoreMain' do
 pod 'AVOSCloud'
 
 pod 'iCarousel', '~> 1.8.3'
-
+pod 'BMKLocationKit'
 pod 'SDWebImage', '~> 4.4.0'
 pod 'AFNetworking', '~> 3.2.1'
 
@@ -17,7 +17,7 @@ pod 'Masonry', '~> 1.1.0'
 pod 'MBProgressHUD', '~> 1.1.0'
 
 pod 'CocoaAsyncSocket', '~> 7.6.3'
-
+pod 'BaiduMapKit' #百度地图SDK
 pod 'FCUUID'
 pod 'IQKeyboardManager', '~> 6.0.3'
 pod 'UMengAnalytics-NO-IDFA'
