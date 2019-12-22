@@ -13,6 +13,9 @@
 		950889AD2315411200160669 /* QTSegmentBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 950889AC2315411200160669 /* QTSegmentBar.m */; };
 		950889B02315414100160669 /* QTSegmentConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 950889AF2315414100160669 /* QTSegmentConfig.m */; };
 		950889B62315449700160669 /* QTSegmentScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 950889B52315449700160669 /* QTSegmentScrollView.m */; };
+		950889B923175FB800160669 /* NSString+Verification.m in Sources */ = {isa = PBXBuildFile; fileRef = 950889B823175FB800160669 /* NSString+Verification.m */; };
+		950889BD2317626B00160669 /* QTDateCalculationHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 950889BC2317626B00160669 /* QTDateCalculationHelper.m */; };
+		950889C0231766B100160669 /* UIButton+SSEdgeInsets.m in Sources */ = {isa = PBXBuildFile; fileRef = 950889BF231766B100160669 /* UIButton+SSEdgeInsets.m */; };
 		951FA96822F6B73B00445DBA /* QTFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 951FA96722F6B73B00445DBA /* QTFileManager.m */; };
 		953FA699228E4D9300287273 /* QTGCDTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 953FA696228E4D9300287273 /* QTGCDTimer.m */; };
 		953FA69A228E4D9300287273 /* QTTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 953FA698228E4D9300287273 /* QTTimer.m */; };
@@ -88,6 +91,12 @@
 		950889AF2315414100160669 /* QTSegmentConfig.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QTSegmentConfig.m; sourceTree = "<group>"; };
 		950889B42315449700160669 /* QTSegmentScrollView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QTSegmentScrollView.h; sourceTree = "<group>"; };
 		950889B52315449700160669 /* QTSegmentScrollView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QTSegmentScrollView.m; sourceTree = "<group>"; };
+		950889B723175FB800160669 /* NSString+Verification.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+Verification.h"; sourceTree = "<group>"; };
+		950889B823175FB800160669 /* NSString+Verification.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+Verification.m"; sourceTree = "<group>"; };
+		950889BB2317626B00160669 /* QTDateCalculationHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QTDateCalculationHelper.h; sourceTree = "<group>"; };
+		950889BC2317626B00160669 /* QTDateCalculationHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QTDateCalculationHelper.m; sourceTree = "<group>"; };
+		950889BE231766B000160669 /* UIButton+SSEdgeInsets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+SSEdgeInsets.h"; sourceTree = "<group>"; };
+		950889BF231766B100160669 /* UIButton+SSEdgeInsets.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+SSEdgeInsets.m"; sourceTree = "<group>"; };
 		951FA96622F6B73B00445DBA /* QTFileManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QTFileManager.h; sourceTree = "<group>"; };
 		951FA96722F6B73B00445DBA /* QTFileManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QTFileManager.m; sourceTree = "<group>"; };
 		953FA695228E4D9300287273 /* QTGCDTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QTGCDTimer.h; sourceTree = "<group>"; };
@@ -239,6 +248,15 @@
 			path = "旋转木马";
 			sourceTree = "<group>";
 		};
+		950889BA2317622400160669 /* 日期计算 */ = {
+			isa = PBXGroup;
+			children = (
+				950889BB2317626B00160669 /* QTDateCalculationHelper.h */,
+				950889BC2317626B00160669 /* QTDateCalculationHelper.m */,
+			);
+			path = "日期计算";
+			sourceTree = "<group>";
+		};
 		951FA96522F6B6FD00445DBA /* 音频管理 */ = {
 			isa = PBXGroup;
 			children = (
@@ -382,6 +400,8 @@
 		95BA4B4F21AA690800684865 /* 快速设置 */ = {
 			isa = PBXGroup;
 			children = (
+				950889BE231766B000160669 /* UIButton+SSEdgeInsets.h */,
+				950889BF231766B100160669 /* UIButton+SSEdgeInsets.m */,
 				95BA4B5421AA690800684865 /* UIButton+Setup.h */,
 				95BA4B5B21AA690800684865 /* UIButton+Setup.m */,
 				95BA4B5821AA690800684865 /* UIImageView+Setup.h */,
@@ -481,6 +501,7 @@
 		95BA4B7921AA690900684865 /* Tool */ = {
 			isa = PBXGroup;
 			children = (
+				950889BA2317622400160669 /* 日期计算 */,
 				951FA96522F6B6FD00445DBA /* 音频管理 */,
 				9559275E22E94BE000A8FAD0 /* 蓝牙 */,
 				9583F06822AE2E9B009DECC3 /* 保活线程 */,
@@ -514,6 +535,8 @@
 			children = (
 				95BA4B8221AA690900684865 /* NSString+MD5.h */,
 				95BA4B8321AA690900684865 /* NSString+MD5.m */,
+				950889B723175FB800160669 /* NSString+Verification.h */,
+				950889B823175FB800160669 /* NSString+Verification.m */,
 			);
 			path = "字符串";
 			sourceTree = "<group>";
@@ -731,6 +754,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				950889C0231766B100160669 /* UIButton+SSEdgeInsets.m in Sources */,
 				953FA69A228E4D9300287273 /* QTTimer.m in Sources */,
 				95BA4B9721AA690900684865 /* BaseView.m in Sources */,
 				95BA4B8F21AA690900684865 /* UIButton+Setup.m in Sources */,
@@ -742,6 +766,7 @@
 				95BA4B9421AA690900684865 /* CustomNavigationController.m in Sources */,
 				9583F06B22AE2F4E009DECC3 /* QTThred.m in Sources */,
 				95BA4B9521AA690900684865 /* BaseModel.m in Sources */,
+				950889BD2317626B00160669 /* QTDateCalculationHelper.m in Sources */,
 				951FA96822F6B73B00445DBA /* QTFileManager.m in Sources */,
 				9573241D22CC3843008AE9FB /* TopAnimationView.m in Sources */,
 				95BA4B9B21AA690900684865 /* NetWorkingTool.m in Sources */,
@@ -763,6 +788,7 @@
 				95BA4B9621AA690900684865 /* BaseTableViewCell.m in Sources */,
 				95BA4B9021AA690900684865 /* UIButton+AutoFontSize.m in Sources */,
 				95BA4B8B21AA690900684865 /* UIImageView+Setup.m in Sources */,
+				950889B923175FB800160669 /* NSString+Verification.m in Sources */,
 				9559276422E94C6F00A8FAD0 /* QTBluetoothHelper.m in Sources */,
 				9559276E22F019FE00A8FAD0 /* QTAudioTool.m in Sources */,
 				950889AD2315411200160669 /* QTSegmentBar.m in Sources */,
