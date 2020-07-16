@@ -8,6 +8,8 @@
 
 #import "BaseViewController.h"
 #import <MBProgressHUD.h>
+#define BaseViewControllerDarkMainColor  [UIColor redColor]
+#define BaseViewControllerLightMainColor [UIColor redColor]
 @interface BaseViewController ()
 @property(nonatomic, copy)void (^navletfaction)(void); // 左侧返回键事件
 @property(nonatomic, copy)void (^navRightaction)(void); // 左侧返回键事件
@@ -150,7 +152,7 @@
     [super viewDidLoad];
        
     // self.view.backgroundColor = [UIColor whiteColor];
-    self.navigationController.navigationBar.titleTextAttributes = @{NSForegroundColorAttributeName:LightMainColor,NSFontAttributeName:[UIFont systemFontOfSize:17]};
+    self.navigationController.navigationBar.titleTextAttributes = @{NSForegroundColorAttributeName:BaseViewControllerLightMainColor,NSFontAttributeName:[UIFont systemFontOfSize:17]};
     
     // Do any additional setup after loading the view.
 }
@@ -165,7 +167,7 @@
 - (void)setTileLabelWithTitle:(NSString *)title textColor: (UIColor *)color fontSize: (CGFloat)fontSize
 {
     if (!color) {
-        color = LightMainColor;
+        color = BaseViewControllerLightMainColor;
     }
     if (!fontSize) {
         fontSize = 14;

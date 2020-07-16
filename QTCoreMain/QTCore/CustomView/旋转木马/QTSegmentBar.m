@@ -7,6 +7,7 @@
 //
 
 #import "QTSegmentBar.h"
+#import "UIView+Setup.h"
 #define kMinMargin 20
 
 @interface QTSegmentBar ()

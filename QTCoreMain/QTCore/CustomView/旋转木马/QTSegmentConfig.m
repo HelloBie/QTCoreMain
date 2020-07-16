@@ -15,9 +15,9 @@
     
     QTSegmentConfig *_defaultConfig = [[QTSegmentConfig alloc] init];
     _defaultConfig.itemNormalColor = [UIColor grayColor];
-    _defaultConfig.itemSelectedColor = LightMainColor;
+    _defaultConfig.itemSelectedColor = [UIColor redColor];
     _defaultConfig.itemFont = [UIFont systemFontOfSize:12];
-    _defaultConfig.indicatorColor = LightMainColor;
+    _defaultConfig.indicatorColor = [UIColor blueColor];
     _defaultConfig.indicatorHeight = 2;
     _defaultConfig.lineBottomHeight = 0.75;
     _defaultConfig.isShowLineBottom = NO;

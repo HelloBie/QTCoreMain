@@ -9,7 +9,7 @@
 #import "QTSegmentContentVC.h"
 
 #import "QTSegmentScrollView.h"
-
+#import "UIView+Setup.h"
 #define kSegmentBarHeight 44
 
 @interface QTSegmentContentVC () <QTSegmentBarDelegate, UIScrollViewDelegate>

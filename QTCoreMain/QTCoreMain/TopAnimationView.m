@@ -8,8 +8,12 @@
 
 #import "TopAnimationView.h"
 
-#define WaveColor1 RGB(98, 92, 244)
-#define WaveColor2 RGB(239 , 239, 245)
+#define TopAnimationViewWaveColor1 TopAnimationViewRGB(98, 92, 244)
+#define TopAnimationViewWaveColor2 TopAnimationViewRGB(239 , 239, 245)
+
+// 获得RGB颜色
+#define TopAnimationViewRGBA(r, g, b, a)                    [UIColor colorWithRed:r/255.0f green:g/255.0f blue:b/255.0f alpha:a]
+#define TopAnimationViewRGB(r, g, b)                        TopAnimationViewRGBA(r, g, b, 1.0f)
 
 @interface TopAnimationView ()
 {
@@ -85,24 +89,24 @@
     //底层
     _waveLayer1 = [CAShapeLayer layer];
     _waveLayer1.fillColor = [UIColor clearColor].CGColor;
-    _waveLayer1.strokeColor = WaveColor2.CGColor;
+    _waveLayer1.strokeColor = TopAnimationViewWaveColor2.CGColor;
     
     [self.layer addSublayer:_waveLayer1];
     
     //上层
     _waveLayer2 = [CAShapeLayer layer];
     _waveLayer2.fillColor = [UIColor clearColor].CGColor;
-    _waveLayer2.strokeColor = WaveColor1.CGColor;
+    _waveLayer2.strokeColor = TopAnimationViewWaveColor1.CGColor;
     [self.layer addSublayer:_waveLayer2];
     
     _waveLayer3 = [CAShapeLayer layer];
     _waveLayer3.fillColor = [UIColor clearColor].CGColor;
-    _waveLayer3.strokeColor = WaveColor2.CGColor;
+    _waveLayer3.strokeColor = TopAnimationViewWaveColor2.CGColor;
     [self.layer addSublayer:_waveLayer3];
     
     _waveLayer4 = [CAShapeLayer layer];
     _waveLayer4.fillColor = [UIColor clearColor].CGColor;
-    _waveLayer4.strokeColor = WaveColor2.CGColor;
+    _waveLayer4.strokeColor = TopAnimationViewWaveColor2.CGColor;
     [self.layer addSublayer:_waveLayer4];
     
     

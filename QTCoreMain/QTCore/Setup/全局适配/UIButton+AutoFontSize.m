@@ -8,6 +8,10 @@
 
 #import "UIButton+AutoFontSize.h"
 #import <objc/runtime.h>
+
+#define AutoFontSizeOffWidth [UIScreen mainScreen].bounds.size.width / 375
+#define AutoFontSizeOffHeight [UIScreen mainScreen].bounds.size.height / 667
+
 @implementation UIButton (AutoFontSize)
 
 + (void)load{
@@ -23,7 +27,7 @@
         //部分不像改变字体的 把tag值设置成333跳过
         if(self.titleLabel.tag != 333){
             CGFloat fontSize = self.titleLabel.font.pointSize;
-            self.titleLabel.font = [self.titleLabel.font fontWithSize:fontSize * OffWidth - 1 ];
+            self.titleLabel.font = [self.titleLabel.font fontWithSize:fontSize * AutoFontSizeOffWidth - 1 ];
         }
     }
     return self;
@@ -47,7 +51,7 @@
         //部分不像改变字体的 把tag值设置成333跳过
         if(self.tag != 333){
             CGFloat fontSize = self.font.pointSize;
-            self.font = [self.font fontWithSize:fontSize * OffWidth - 1];
+            self.font = [self.font fontWithSize:fontSize * AutoFontSizeOffWidth - 1];
         }
     }
     return self;
@@ -69,7 +73,7 @@
         //部分不像改变字体的 把tag值设置成333跳过
         if(self.tag != 333){
             CGFloat fontSize = self.font.pointSize;
-            self.font = [self.font fontWithSize:fontSize * OffWidth - 1];
+            self.font = [self.font fontWithSize:fontSize * AutoFontSizeOffWidth - 1];
         }
     }
     return self;
@@ -91,7 +95,7 @@
         //部分不像改变字体的 把tag值设置成333跳过
         if(self.tag != 333){
             CGFloat fontSize = self.font.pointSize;
-            self.font = [self.font fontWithSize:fontSize * OffWidth - 1];
+            self.font = [self.font fontWithSize:fontSize * AutoFontSizeOffWidth - 1];
         }
     }
     return self;

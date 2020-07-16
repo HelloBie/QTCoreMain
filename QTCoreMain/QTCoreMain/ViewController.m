@@ -17,6 +17,7 @@
 #import "QTSegmentContentVC.h"
 #import <Masonry.h>
 #import "QTTimer.h"
+#import "QT.pch"
 @interface ViewController ()
 @property(nonatomic,strong)QTThred *th;
 @property(nonatomic,strong)QTTimer *timer;

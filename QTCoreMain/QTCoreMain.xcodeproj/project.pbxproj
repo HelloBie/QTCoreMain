@@ -965,7 +965,7 @@
 				DEVELOPMENT_TEAM = 57SV4T3X4K;
 				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "/Users/bieqiutian/Desktop/工具篮/QTCoreMain/QT.pch";
+				GCC_PREFIX_HEADER = "";
 				INFOPLIST_FILE = QTCoreMain/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -991,7 +991,7 @@
 				DEVELOPMENT_TEAM = 57SV4T3X4K;
 				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "/Users/bieqiutian/Desktop/工具篮/QTCoreMain/QT.pch";
+				GCC_PREFIX_HEADER = "";
 				INFOPLIST_FILE = QTCoreMain/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

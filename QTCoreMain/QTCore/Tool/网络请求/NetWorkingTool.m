@@ -9,6 +9,10 @@
 #import "NetWorkingTool.h"
 #import <AFNetworking.h>
 #import "NSString+MD5.h"
+
+// 测试借口
+
+#define NetWorkingToolBaseURL @"http://47.92.37.228:1024/"
 @implementation NetWorkingTool
 #pragma mark -- GET请求 --
 + (void)getWithURLString:(NSString *)URLString
@@ -30,7 +34,7 @@
      *  请求超时的时间
      */
     //    manager.requestSerializer.timeoutInterval = 5;
-      URLString = [NSString stringWithFormat:@"%@%@", QTBaseURL,URLString];
+    URLString = [NSString stringWithFormat:@"%@%@", NetWorkingToolBaseURL,URLString];
     NSMutableDictionary *dic = ((NSDictionary *)parameters).mutableCopy;
     [dic setObject:@"2201" forKey:@"citycode"];
     for (NSString *key in dic.allKeys) {
@@ -65,7 +69,7 @@
    
     // 可接受的文本参数规格
     manager.responseSerializer.acceptableContentTypes =  [NSSet setWithObjects:@"application/json", @"text/html",@"text/json",@"text/javascript",@"text/plain", nil];
-    URLString = [NSString stringWithFormat:@"%@%@", QTBaseURL,URLString];
+    URLString = [NSString stringWithFormat:@"%@%@", NetWorkingToolBaseURL,URLString];
     NSMutableDictionary *dic = ((NSDictionary *)parameters).mutableCopy;
     [dic setObject:@"2201" forKey:@"citycode"];
     
@@ -143,7 +147,7 @@
     manager.requestSerializer = [AFHTTPRequestSerializer serializer];
     // 可接受的文本参数规格
     manager.responseSerializer.acceptableContentTypes =  [NSSet setWithObjects:@"application/json", @"text/html",@"text/json",@"text/javascript", nil];
-    URLString = [NSString stringWithFormat:@"%@%@", QTBaseURL,URLString];
+    URLString = [NSString stringWithFormat:@"%@%@", NetWorkingToolBaseURL,URLString];
     NSMutableDictionary *dic = ((NSDictionary *)parameters).mutableCopy;
     [dic setObject:@"2201" forKey:@"citycode"];
     

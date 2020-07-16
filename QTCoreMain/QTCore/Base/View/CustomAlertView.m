@@ -7,6 +7,19 @@
 //
 
 #import "CustomAlertView.h"
+
+// 屏幕大小尺寸
+#define CustomAlertViewWidth [UIScreen mainScreen].bounds.size.width
+#define CustomAlertViewHeight [UIScreen mainScreen].bounds.size.height
+
+// 获得RGB颜色
+#define CustomAlertViewRGBA(r, g, b, a)                    [UIColor colorWithRed:r/255.0f green:g/255.0f blue:b/255.0f alpha:a]
+#define CustomAlertViewRGB(r, g, b)                        CustomAlertViewRGBA(r, g, b, 1.0f)
+
+// 屏幕当前比例
+#define CustomAlertViewOffWidth [UIScreen mainScreen].bounds.size.width / 375
+#define CustomAlertViewOffHeight [UIScreen mainScreen].bounds.size.height / 667
+
 @interface CustomAlertView()
 
 @end
@@ -17,7 +30,7 @@
     self = [super initWithFrame:frame];
     if (self) {
         //创建遮罩
-        _blackView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, Width, Height)];
+        _blackView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, CustomAlertViewWidth, CustomAlertViewHeight)];
         _blackView.backgroundColor = [UIColor blackColor];
         _blackView.alpha = 0.5;
         UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(blackClick)];
@@ -54,7 +67,7 @@
     
     
     UILabel * yellowLabel = [[UILabel alloc]initWithFrame:CGRectMake(0, _tipLable.frame.size.height + 2, 270, 2)];
-    yellowLabel.backgroundColor = RGB(243, 193, 74);
+    yellowLabel.backgroundColor = CustomAlertViewRGB(243, 193, 74);
     
    
     
@@ -74,9 +87,9 @@
     self.confirmButton = [UIButton buttonWithType:UIButtonTypeCustom];
     self.cancelButton.frame = CGRectMake(20,self.alertview.frame.size.height-88, (m-60)/2, 33);
     self.confirmButton.frame = CGRectMake(20+(20+(m-60)/2), self.alertview.frame.size.height-88, (m-60)/2, 33);
-    [self.cancelButton setBackgroundColor:RGB(207, 207, 207)];
-    [self.confirmButton setBackgroundColor:RGB(243, 193, 74)];
-    [self.cancelButton setTitleColor:RGB(38, 38, 38) forState:UIControlStateNormal];
+    [self.cancelButton setBackgroundColor:CustomAlertViewRGB(207, 207, 207)];
+    [self.confirmButton setBackgroundColor:CustomAlertViewRGB(243, 193, 74)];
+    [self.cancelButton setTitleColor:CustomAlertViewRGB(38, 38, 38) forState:UIControlStateNormal];
     
     [self.cancelButton setTitle:@"取消" forState:UIControlStateNormal];
     [self.confirmButton setTitle:@"确定" forState:UIControlStateNormal];
@@ -98,12 +111,12 @@
 //是否确认发货
 - (void)creatViewInAlert
 {
-    UILabel *attenL = [[UILabel alloc]initWithFrame:CGRectMake(0, (_tipLable.frame.origin.y + 18 * OffWidth + _tipLable.frame.size.height) * OffHeight, self.alertview.frame.size.width , 30 * OffHeight)];
+    UILabel *attenL = [[UILabel alloc]initWithFrame:CGRectMake(0, (_tipLable.frame.origin.y + 18 * CustomAlertViewOffWidth + _tipLable.frame.size.height) * CustomAlertViewOffHeight, self.alertview.frame.size.width , 30 * CustomAlertViewOffHeight)];
     attenL.font = [UIFont systemFontOfSize:16];
     attenL.text = _contentStr;
     attenL.numberOfLines = 0;
     attenL.textAlignment = NSTextAlignmentCenter;
-    attenL.textColor = RGB(38, 38, 38);
+    attenL.textColor = CustomAlertViewRGB(38, 38, 38);
     [self.alertview addSubview:attenL];
 }
 

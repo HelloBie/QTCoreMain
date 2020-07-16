@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "QTYDY.h"
+#import "QTCore.h"
 #import <BaiduMapAPI_Base/BMKBaseComponent.h>
 #import <BMKLocationkit/BMKLocationComponent.h>
 #import "ViewController.h"
@@ -25,6 +26,8 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     // Override point for customization after application launch.
+    CGFloat maxWidth = [UIScreen mainScreen].bounds.size.width;
+    CGFloat maxHeight = [UIScreen mainScreen].bounds.size.height;
     BMKMapManager *mapManager = [[BMKMapManager alloc] init];
     // 如果要关注网络及授权验证事件，请设定generalDelegate参数
     BOOL ret = [mapManager start:@"WBxYqm4huBGfAePvaADzaiuwV3rYkZT0"  generalDelegate:nil];
@@ -43,7 +46,7 @@
         UIButton *button = [UIButton new]
         .set_frame(CGRectMake(0, 0, 200, 50))
         .set_radius(25)
-        .set_center(CGPointMake(Width / 2.0, 300 + 30 * i))
+        .set_center(CGPointMake(maxWidth / 2.0, 300 + 30 * i))
         .set_title(@[@"下一步",@"立即使用"][i])
         .set_backgroundColor(@[[UIColor blueColor],[UIColor yellowColor]][i])
         .set_titleColor([UIColor whiteColor]);

@@ -5,7 +5,7 @@
 //  Created by MasterBie on 2019/8/29.
 //  Copyright © 2019 MasterBie. All rights reserved.
 //
-
+#import <Foundation/Foundation.h>
 #import "NSString+Verification.h"
 #import <sys/utsname.h>
 @implementation NSString (Verification)
