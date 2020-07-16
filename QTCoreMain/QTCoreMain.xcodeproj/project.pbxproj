@@ -254,7 +254,6 @@
 		950FA1F324C010B5004BF7B3 /* Headers */ = {
 			isa = PBXGroup;
 			children = (
-				95BA4B6621AA690800684865 /* QT.pch */,
 				95BA4B6721AA690800684865 /* QTCore.h */,
 			);
 			path = Headers;
@@ -312,6 +311,7 @@
 		95B5CD11217876DF00091FA5 = {
 			isa = PBXGroup;
 			children = (
+				95BA4B6621AA690800684865 /* QT.pch */,
 				95BA4B4D21AA690800684865 /* QTCore */,
 				95B5CD1C217876DF00091FA5 /* QTCoreMain */,
 				95B5CD35217876E100091FA5 /* QTCoreMainTests */,
@@ -965,7 +965,7 @@
 				DEVELOPMENT_TEAM = 57SV4T3X4K;
 				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "/Users/bieqiutian/Desktop/工具篮/QTCoreMain/QTCore/QT.pch";
+				GCC_PREFIX_HEADER = "/Users/bieqiutian/Desktop/工具篮/QTCoreMain/QT.pch";
 				INFOPLIST_FILE = QTCoreMain/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -991,7 +991,7 @@
 				DEVELOPMENT_TEAM = 57SV4T3X4K;
 				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "/Users/bieqiutian/Desktop/工具篮/QTCoreMain/QTCore/QT.pch";
+				GCC_PREFIX_HEADER = "/Users/bieqiutian/Desktop/工具篮/QTCoreMain/QT.pch";
 				INFOPLIST_FILE = QTCoreMain/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
