@@ -11,6 +11,9 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface QTDateCalculationHelper : NSObject
+
+// format @"yyyyMMdd HHmmss"
+
 // 获取现在日期 0时0分0秒,因为计算周期按照自然日
 + (NSString *)getNowdate;
 
