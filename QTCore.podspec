@@ -4,7 +4,7 @@ Pod::Spec.new do |s|
 
 
   s.name         = "QTCore"
-  s.version      = "0.2"
+  s.version      = "0.6"
   s.summary      = "A short description of QTCore."
 
 
