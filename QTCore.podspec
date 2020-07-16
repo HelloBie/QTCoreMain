@@ -4,7 +4,7 @@ Pod::Spec.new do |s|
 
 
   s.name         = "QTCore"
-  s.version      = "0.6"
+  s.version      = "0.7"
   s.summary      = "A short description of QTCore."
 
 
@@ -29,7 +29,7 @@ Pod::Spec.new do |s|
 
 
 
-  s.source_files  = "QTCoreMain/QTCore/*.{h,m}"
+  s.source_files  = "QTCoreMain/QTCore/**.{h,m}"
 #s.exclude_files = "Classes/Exclude"
 
   # s.public_header_files = "Classes/**/*.h"
