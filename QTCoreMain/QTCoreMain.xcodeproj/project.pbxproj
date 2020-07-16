@@ -251,6 +251,15 @@
 			path = "日期计算";
 			sourceTree = "<group>";
 		};
+		950FA1F324C010B5004BF7B3 /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				95BA4B6621AA690800684865 /* QT.pch */,
+				95BA4B6721AA690800684865 /* QTCore.h */,
+			);
+			path = Headers;
+			sourceTree = "<group>";
+		};
 		951FA96522F6B6FD00445DBA /* 音频管理 */ = {
 			isa = PBXGroup;
 			children = (
@@ -368,11 +377,10 @@
 		95BA4B4D21AA690800684865 /* QTCore */ = {
 			isa = PBXGroup;
 			children = (
+				950FA1F324C010B5004BF7B3 /* Headers */,
 				95BA4B4E21AA690800684865 /* Setup */,
 				95BA4B5F21AA690800684865 /* CustomView */,
 				95BA4B6321AA690800684865 /* UserModel */,
-				95BA4B6621AA690800684865 /* QT.pch */,
-				95BA4B6721AA690800684865 /* QTCore.h */,
 				95BA4B6821AA690800684865 /* Base */,
 				95BA4B7921AA690900684865 /* Tool */,
 			);
