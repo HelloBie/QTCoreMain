@@ -19,7 +19,6 @@
 #import "NetWorkingTool.h"
 #import "NSString+MD5.h"
 #import "UIImage+Tool.h"
-#import "UIViewController+HUD.h"
 
 #ifndef QTCore_h
 #define QTCore_h
