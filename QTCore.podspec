@@ -4,12 +4,11 @@ Pod::Spec.new do |s|
 
 
   s.name         = "QTCore"
-  s.version      = "0.7"
+  s.version      = "0.8"
   s.summary      = "A short description of QTCore."
 
 
-#s.description  = <<-DESC
-#                  DESC
+ s.description  = "des"
 
   s.homepage     = "https://github.com/HelloBie/QTCoreMain"
 
@@ -27,9 +26,12 @@ Pod::Spec.new do |s|
   s.source       = { :git => "https://github.com/HelloBie/QTCoreMain.git", :tag => "#{s.version}" }
 
 
+    s.ios.frameworks = 'Foundation', 'UIKit'
+
+   s.ios.deployment_target = '6.0' # minimum SDK with autolayout
 
 
-  s.source_files  = "QTCoreMain/QTCore/**.{h,m}"
+  s.source_files  = 'QTCoreMain/QTCore/**/*.{h,m}'
 #s.exclude_files = "Classes/Exclude"
 
   # s.public_header_files = "Classes/**/*.h"
@@ -44,7 +46,7 @@ Pod::Spec.new do |s|
 
 
 
-
+  s.frameworks = "Foundation", "UIKit"
   # s.framework  = "SomeFramework"
   # s.frameworks = "SomeFramework", "AnotherFramework"
 
